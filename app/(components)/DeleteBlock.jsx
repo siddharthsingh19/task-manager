@@ -11,14 +11,13 @@ const DeleteBlock = ({ id }) => {
   const [password, setPassword] = useState("");
   const [showModal, setShowModal] = useState(false);
 
-  const deletePassword = process.env.DELETE_IT;
-
+  const deletePassword = process.env.NEXT_PUBLIC_DELETE_IT;
   const handleDelete = async () => {
-    if (password === deletePassword) {
+    if (password.trim() === deletePassword.trim()) {
       await deleteTicket();
       setShowModal(false);
     } else {
-      alert("Incorrect password. Deletion canceled.");
+      alert("Access Denied: You are not authorized to perform this operation.");
     }
   };
   const deleteTicket = async () => {
