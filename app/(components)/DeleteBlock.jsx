@@ -26,7 +26,7 @@ const DeleteBlock = ({ id }) => {
       method: "DELETE",
     });
     if (res.ok) {
-      router.reload();
+      router.refresh();
     }
   };
 
