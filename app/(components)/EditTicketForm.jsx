@@ -66,6 +66,7 @@ const EditTicketForm = ({ ticket }) => {
   };
 
   const categories = [
+    "Unassigned",
     "Abhigya Dufare",
     "Ayush Kemni",
     "Tejus Chaturvedi",
