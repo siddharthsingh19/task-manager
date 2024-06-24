@@ -11,12 +11,12 @@ const DeleteBlock = ({ id }) => {
   const [password, setPassword] = useState("");
   const [showModal, setShowModal] = useState(false);
 
-  const deletePassword = process.env.NEXT_PUBLIC_DELETE_PASSWORD; // Access environment variable
+  const deletePassword = process.env.DELETE_IT;
 
   const handleDelete = async () => {
     if (password === deletePassword) {
       await deleteTicket();
-      setShowModal(false); // Close modal after deletion
+      setShowModal(false);
     } else {
       alert("Incorrect password. Deletion canceled.");
     }
