@@ -73,7 +73,7 @@ const EditTicketForm = ({ ticket }) => {
     "Pankaj Upadhyay",
     "Simran Manwani",
     "Suhani Gupta",
-    "ViKas Kumar",
+    "Vikas Kumar",
   ];
 
   return (
